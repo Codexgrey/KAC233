@@ -1,0 +1,219 @@
+/* importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", cursive;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body.speaker {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/speaker.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body.audience {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/audience.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/* sliding animation on navbar */
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: greenyellow;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+main {
+    margin: 0 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 81.6px);
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 40%;
+    border: 5px solid greenyellow;
+    border-radius: 10px;
+}
+
+span {
+    font-family: cursive;
+    color: greenyellow;
+}
+
+.wel-message {
+    width: 80%;
+    margin: 30px auto;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.about-btn {
+    margin: 0 auto 30px auto;
+    width: 100px;
+    justify-items: center;
+}
+
+.abt-block a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: greenyellow;
+}
+
+.abt-block {
+    display: block;
+    width: 100px;
+    height: 40px;
+    /* border: none; */
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.abt-block a:hover {
+    color: #fff;
+}
+
+.abt-block:hover {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.register {
+    display: flex;
+    /* flex-direction: right; */
+    flex-direction: column;
+    background-color: transparent;
+    width: 40%;
+    /* border: 5px solid white; */
+    border-radius: 10px;
+}
+
+.reg-message {
+    width: 80%;
+    margin: 30px 75px;
+    font-size: 35px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.reg-message span {
+    font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.reg-btn {
+    margin: 0 auto 30px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.reg-block a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: greenyellow;
+}
+
+.reg-block {
+    position: relative;
+    display: block;
+    min-width: 120px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: color 0.3s linear;
+}
+
+.reg-block.speaker {
+    margin-right: 50px;
+}
+
+.reg-block.audience {
+    margin-left: auto;
+}
+
+.reg-block a:hover {
+    color: #fff;
+}
+
+.reg-block:hover {
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+}

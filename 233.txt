@@ -1,0 +1,23 @@
+PROJECT 233 Brief.
+
+Team Members:
+KUDZAI
+ABUBAKAR
+COLLINS
+
+1. Homepage
+	- Navbar
+	- Cool background photo and fonts
+	- Call to action (register) buttons
+
+2. Detailed Information on Workshop
+	- Pictures about Workshop/events
+	- Some nice animation maybe*
+
+3. Dual Registration page - from Register button on Homepage 
+	- Register as a Student/Audience
+	- Register as a Tutor/Speaker
+	- Total registration fee and discount where applicable.
+
+4. Contact us 
+	- Form and Form Validation
