@@ -15,9 +15,88 @@
         <nav class="navbar">
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
+
+    <main>
+        <table class="form-table">
+            <form action="mailto:fhocanin@ciu.edu.tr" method="get">
+                <tr>
+                    <th> <label for="fullname">Name: </label> </th>
+                    <td> <input type="text" name="fullname" maxlength="27" class="user-details" required > </td>
+                </tr>
+                <tr>
+                    <th> <label for="email">E-mail: </label> </th>
+                    <td> <input type="email" name="email" class="user-details" required > </td>
+                </tr>
+                <tr>
+                    <th> <label for="gender">Gender: </label> </th>
+                    <td>
+                        <select id="gender">
+                            <option value="select">Select Option</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <!-- <input type="checkbox" name="gender" class="box" >Male 
+                        <input type="checkbox" name="gender" class="box" >Female  -->
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" class="note"> 
+                        Please schedule your session(s) and access package(s). 
+                    </th>
+                </tr> 
+                
+                <tr>
+                    <th> <label for="date">Date: </label> </th>
+                    <td>
+                        From <input type="date" name="from" value="2024-01-13" min="2024-01-12" max="2024-01-15" required >
+                        To <input type="date" name="to" value="2024-01-13" min="2024-01-13" max="2024-01-15" required >
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label for="design">Design: </label> </th>
+                    <td>
+                        <input type="radio" name="des" class="rad" value=175><em>Limited</em> €175 
+                        <input type="radio" name="des" class="rad" value=400><em>All</em> €400 
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label for="prototyping">Prototyping: </label> </th>
+                    <td>
+                        <input type="radio" name="proto" class="rad" value=150><em>Limited</em> €150 
+                        <input type="radio" name="proto" class="rad" value=300><em>All</em> €300 
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label for="programming">Programming: </label> </th>
+                    <td>
+                        <input type="radio" name="prog" class="rad" value=120><em>Limited</em> €120 
+                        <input type="radio" name="prog" class="rad" value=250><em>All</em> €250 
+                    </td>
+                </tr>
+                <tr>
+                    <th> <input type="submit" class="charge" value="Total Charge" onclick=calcFee()> </th>
+                    <td> <p class="show-charge"> </p>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="td-span"> 
+                        <input type="submit" class="sub-reg" value="Register" > 
+                    </td>
+                </tr>   
+            </form>
+    
+        </table>
+
+        <div class="tokyo">
+            <h3>&#x1F3EFTOKYO awaits!&#x1F389&#x1F60E</h3>
+            <img src="img/tokyo3.jpg" alt="Tokyo awaits photo" class="tokyo-photo">
+        </div>
+    </main>
     
     <footer>
         <p>
