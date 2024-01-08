@@ -513,6 +513,16 @@ td>em {
 
 td>p {
     margin-left: 8px;
+    word-break: normal;
+    width: 275px;
+}
+
+#display {
+    color:rgba(200, 18, 18, 0.7);
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word;
 }
 
 .sub-reg, .charge {
@@ -539,13 +549,6 @@ td>p {
     border-radius: 10px;
 }
 
-.show-charge {
-    color:rgba(200, 18, 18, 0.7);
-    font-family: monospace;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 .sub-reg:hover {
     border: 2px solid #fff;
     border-radius: 10px;
@@ -558,7 +561,7 @@ td>p {
 
 .tokyo-photo {
     width: 600px;
-    border-radius: 47.5%;
+    border-radius: 10px;
     border-color: #fff;
 }
 

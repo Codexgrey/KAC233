@@ -22,17 +22,20 @@
 
     <main>
         <table class="form-table">
-            <form action="mailto:fhocanin@ciu.edu.tr" method="get">
+            <form action="mailto:fhocanin@ciu.edu.tr" method="post">
                 <tr>
-                    <th> <label for="fullname">Name: </label> </th>
+                    <th> Name: </th>
                     <td> <input type="text" name="fullname" maxlength="27" class="user-details" required > </td>
                 </tr>
                 <tr>
-                    <th> <label for="email">E-mail: </label> </th>
-                    <td> <input type="email" name="email" class="user-details" required > </td>
+                    <th> E-mail: </th>
+                    <td> 
+                        <input type="email" name="email" class="user-details" autocomplete="email"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required> 
+                    </td>
                 </tr>
                 <tr>
-                    <th> <label for="gender">Gender: </label> </th>
+                    <th> Gender: </th>
                     <td>
                         <select id="gender">
                             <option value="select">Select Option</option>
@@ -40,8 +43,6 @@
                             <option value="female">Female</option>
                             <option value="other">Other</option>
                         </select>
-                        <!-- <input type="checkbox" name="gender" class="box" >Male 
-                        <input type="checkbox" name="gender" class="box" >Female  -->
                     </td>
                 </tr>
 
@@ -52,36 +53,36 @@
                 </tr> 
                 
                 <tr>
-                    <th> <label for="date">Date: </label> </th>
+                    <th> Date: </th>
                     <td>
-                        From <input type="date" name="from" value="2024-01-13" min="2024-01-12" max="2024-01-15" required >
-                        To <input type="date" name="to" value="2024-01-13" min="2024-01-13" max="2024-01-15" required >
+                        From <input type="date" name="from" min="2024-01-12" max="2024-01-15" required>
+                        To <input type="date" name="to" min="2024-01-13" max="2024-01-15" required>
                     </td>
                 </tr>
                 <tr>
-                    <th> <label for="design">Design: </label> </th>
+                    <th> Design: </th>
                     <td>
                         <input type="radio" name="des" class="rad" value=250><em>Limited</em> €250 
                         <input type="radio" name="des" class="rad" value=500><em>All</em> €500 
                     </td>
                 </tr>
                 <tr>
-                    <th> <label for="prototyping">Prototyping: </label> </th>
+                    <th> Prototyping: </label> </th>
                     <td>
                         <input type="radio" name="proto" class="rad" value=200><em>Limited</em> €200 
                         <input type="radio" name="proto" class="rad" value=400><em>All</em> €400 
                     </td>
                 </tr>
                 <tr>
-                    <th> <label for="programming">Programming: </label> </th>
+                    <th> Programming: </th>
                     <td>
                         <input type="radio" name="prog" class="rad" value=225><em>Limited</em> €225 
                         <input type="radio" name="prog" class="rad" value=550><em>All</em> €550 
                     </td>
                 </tr>
                 <tr>
-                    <th> <input type="submit" class="charge" value="Total Charge" onclick=calcFee()> </th>
-                    <td> <p class="show-charge" > </p>
+                    <th> <button class="charge" onclick="getCharge()";>Total Charge</button> </th>
+                    <td> <p id="display" ></p> </td>
                 </tr>
 
                 <tr>
