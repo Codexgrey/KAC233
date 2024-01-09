@@ -2,7 +2,7 @@
 A simple workshop/event website built as part of an assessment on HTML, CSS and Javascript skills.
 
 DISCLAIMER! - OPEN IN DESKTOP MODE.
-Project is not optimized for smaller screes.
+Project is not optimized for smaller screens.
 
 --- Overview ---
 1. Homepage
