@@ -94,6 +94,27 @@ main {
     min-height: calc(100vh - 81.6px);
 }
 
+.mainblock {
+    margin: 3% 100px;
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 5% 0 1% 0;
+    color: greenyellow;
+    text-shadow: -1px -1px 18px #fff;
+}
+
+.main-wel {
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .welcome {
     display: flex;
     flex-direction: column;
@@ -117,7 +138,7 @@ span {
 
 .about-btn {
     margin: 0 auto 30px auto;
-    width: 100px;
+    width: 120px;
     justify-items: center;
 }
 
@@ -130,7 +151,7 @@ span {
 
 .abt-block {
     display: block;
-    width: 100px;
+    width: 120px;
     height: 40px;
     font-size: 16px;
     cursor: pointer;
@@ -169,6 +190,10 @@ span {
     font-family: monospace;
     font-size: 40px;
     font-style: italic;
+}
+
+.reg-cg h2 {
+    margin-top: 2%;
 }
 
 .reg-btn {
@@ -215,16 +240,7 @@ footer {
     padding: 20px;
 }
 
-/* about.html styles */
-.about-main {
-    margin: 3% 100px;
-    padding-top: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: calc(100vh - 81.6px);
-}
-
+/*********************************** about.html styles *********************************/
 .about-photo {
     width: 300px;
     height: 400px;
@@ -242,7 +258,6 @@ footer {
 .about>p {
     color: #fff;
     overflow: hidden;
-    /* font-size : 18px; */
 }
 
 .category {
@@ -328,28 +343,47 @@ footer {
 }
 
 .category>p {
-    margin: 5% auto 0% auto;
+    margin: 0% 10% 0% 10%;
     color: #fff;
 }
 
-.sessions {
-    margin-top: 2%;
+p.info-start {
+    margin-top: 5%;
+}
+
+p.info-end {
+    margin-bottom: 2%;
+}
+
+/* sessions & events container styles ************/
+.sessions, .events {
+    margin-top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.session h3 {
+.events {
+    width: 100%;
+    margin: 2% 10px;
+    justify-content: space-between;
+}
+
+.session h3, .event h3 {
     color: #fff;
     margin: 20px auto;
 }
 
-.session {
+.event h3 {
+    text-shadow: 0.5px 0.5px 18px #fff;
+}
+
+.session, .event {
     display: flex;
     flex-direction: column;
 }
 
-.ssh-photo {
+.ssh-photo, .event-photo {
     width: 350px;
     height: 350px;
     object-fit: cover;
@@ -373,7 +407,7 @@ footer {
     text-align: center;
 }
 
-/* contact.html styles */
+/******************************* contact.html styles **************************************/
 .form {
     padding-top: 0;
     margin-left: 5%;
@@ -427,7 +461,7 @@ textarea {
 .form-details h2 {
     color: #fff;
     align-self: center;
-    text-shadow: 5px 5px 15px #fff;
+    text-shadow: 2px 2px 15px #fff;
 }
 
 .fields {
@@ -443,7 +477,7 @@ textarea {
 }
 
 
-/* Speaker and Audience html styles */
+/****************************** Speaker and Audience html styles ********************************/
 .form-table {
     margin: 2.5% 0;
     padding: 20px;
@@ -525,7 +559,7 @@ td>p {
     word-wrap: break-word;
 }
 
-.sub-reg, .charge {
+.sub-reg, .cost {
     font-weight: 500;
     font-size: 16px;
     min-width: 120px;
@@ -537,13 +571,13 @@ td>p {
     cursor: pointer;
 }
 
-.charge {
+.cost {
     border: 2px solid rgba(0, 0, 0, 0.7);
     color: rgba(0, 0, 0, 0.7);
     background-color: #fff;
 }
 
-.charge:hover {
+.cost:hover {
     border: 2px solid greenyellow;
     color: greenyellow;
     border-radius: 10px;
@@ -569,7 +603,7 @@ td>p {
     margin-bottom: 10px;
     color: greenyellow;
     text-align: center;
-    text-shadow: 5px 5px 10px #fff;
+    text-shadow: 2px 2px 15px #fff;
     font-family: cursive;
     font-size: 32px;
 }

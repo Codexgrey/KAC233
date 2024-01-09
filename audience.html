@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="script.js"></script>
-    <title> Register for KAC233 </title>
+    <title> Audience Register for KAC233 </title>
 </head>
 
 
@@ -22,7 +22,7 @@
 
     <main>
         <table class="form-table">
-            <form action="mailto:fhocanin@ciu.edu.tr" method="post">
+            <form id="register-form" action="mailto:info@ciu.edu.tr" method="post">
                 <tr>
                     <th> Name: </th>
                     <td> <input type="text" name="fullname" maxlength="27" class="user-details" required > </td>
@@ -55,33 +55,37 @@
                 <tr>
                     <th> Date: </th>
                     <td>
-                        From <input type="date" name="from" min="2024-01-12" max="2024-01-15" required>
-                        To <input type="date" name="to" min="2024-01-13" max="2024-01-15" required>
+                        <!--
+                            Earliest date for arrival booking 12th, latest date 15th 
+                            Earliest date for exit booking 15th, latest date 18th
+                        -->
+                        From <input type="date" name="from" id="from" min="2024-01-12" max="2024-01-15" required>
+                        To <input type="date" name="to" id="to" min="2024-01-15" max="2024-01-18" required>
                     </td>
                 </tr>
                 <tr>
                     <th> Design: </th>
                     <td>
-                        <input type="radio" name="des" class="rad" value=250><em>Limited</em> €250 
+                        <input type="radio" name="des" class="rad" value=80><em>Limited</em> €80 
                         <input type="radio" name="des" class="rad" value=500><em>All</em> €500 
                     </td>
                 </tr>
                 <tr>
                     <th> Prototyping: </label> </th>
                     <td>
-                        <input type="radio" name="proto" class="rad" value=200><em>Limited</em> €200 
+                        <input type="radio" name="proto" class="rad" value=75><em>Limited</em> €75 
                         <input type="radio" name="proto" class="rad" value=400><em>All</em> €400 
                     </td>
                 </tr>
                 <tr>
                     <th> Programming: </th>
                     <td>
-                        <input type="radio" name="prog" class="rad" value=225><em>Limited</em> €225 
+                        <input type="radio" name="prog" class="rad" value=90><em>Limited</em> €90 
                         <input type="radio" name="prog" class="rad" value=550><em>All</em> €550 
                     </td>
                 </tr>
                 <tr>
-                    <th> <button class="charge" onclick="getCharge()";>Total Charge</button> </th>
+                    <th> <button class="cost" onclick="return getCost()";>Total Cost</button> </th>
                     <td> <p id="display" ></p> </td>
                 </tr>
 
