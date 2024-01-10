@@ -105,7 +105,7 @@ main {
 h2 {
     margin: 5% 0 1% 0;
     color: greenyellow;
-    text-shadow: -1px -1px 18px #fff;
+    text-shadow: -1px -1px 20px rgba(0, 0, 0);
 }
 
 .main-wel {
@@ -375,7 +375,7 @@ p.info-end {
 }
 
 .event h3 {
-    text-shadow: 0.5px 0.5px 18px #fff;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0);
 }
 
 .session, .event {
