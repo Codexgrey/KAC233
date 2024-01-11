@@ -18,7 +18,7 @@ body {
 
 body.about {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8),
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
                 rgba(0, 0, 0, 0.7)), url(img/home.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -26,16 +26,14 @@ body.about {
 
 body.speaker {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(img/speaker.jpg) no-repeat;
+    background: url(img/speaker.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 body.audience {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(img/audience.jpg) no-repeat;
+    background: url(img/audience.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -405,6 +403,11 @@ p.info-end {
 .prices th {
     color: greenyellow;
     text-align: center;
+}
+
+/******************************* registration.styles **************************************/
+.registration {
+    padding-top: 2%;
 }
 
 /******************************* contact.html styles **************************************/

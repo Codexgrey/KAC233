@@ -33,7 +33,7 @@ function getCost() {
     var result;
 
     // percent discount
-    let per1 = .30, per2 = .15;
+    let per = .15;
 
     // session count
     let count = 0
@@ -51,21 +51,17 @@ function getCost() {
             count++;
 
             if (charge > 100)
-                cost += charge; // All access packages
+                cost += charge; // session package = All access
             else  
-                cost += getDays() * charge; // limited access packages
+                cost += getDays() * charge; // session package = Limited access 
         }
     };
 
 
     // Checking for and calculating discounts
-    if (count == 3) {
-        totalCost = cost - (cost * per1);
-        result = totalCost + ", \n plus 30% discount";
-
-    } else if (count == 2) {
-        totalCost = cost - (cost * per2);
-        result = totalCost + ", \n plus 15% discount";
+    if (count > 2 && cost > 1000) {
+        totalCost = cost - (cost * per);
+        result = totalCost + ", \n plus 15% discount"; 
 
     } else {
         totalCost = cost;
