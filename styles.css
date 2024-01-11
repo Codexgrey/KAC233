@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", cursive;
+    font-family: "Poppins", cursive, Verdana;
 }
 
 body {
@@ -125,7 +125,7 @@ h2 {
 }
 
 span {
-    font-family: cursive;
+    font-family: cursive, Verdana;
     color: greenyellow;
 }
 
@@ -604,6 +604,6 @@ td>p {
     color: greenyellow;
     text-align: center;
     text-shadow: 2px 2px 15px #fff;
-    font-family: cursive;
+    font-family: cursive, Verdana;
     font-size: 32px;
 }
