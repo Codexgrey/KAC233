@@ -40,20 +40,20 @@ function getCost() {
 
 
     // looping through input to find radio buttons, then get their values
-    /* if; charge > 100; 
+    /* if; price > 100; 
         user opted for all access package on a session, so no cost by days.
-        else if; charge <= to 100; 
+        else if; price <= to 100; 
         user has paid for limited access package on a session, so "cost = cost * days" 
     */
     for (i = 0; i < elem.length; i++) {
         if (elem[i].type == "radio" && elem[i].checked) {
-            let charge = parseInt(elem[i].value);
+            let price = parseInt(elem[i].value); 
             count++;
 
-            if (charge > 100)
-                cost += charge; // session package = All access
+            if (price > 100)
+                cost += price; // session package = All access
             else  
-                cost += getDays() * charge; // session package = Limited access 
+                cost += getDays() * price; // session package = Limited access 
         }
     };
 
